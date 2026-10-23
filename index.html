@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050505">
+  <meta name="description" content="Revest Pro: envelopamento de móveis, adesivos decorativos, papel de parede e revestimentos decorativos em Salvador, Lauro de Freitas e outras cidades da Bahia.">
+  <title>Revest Pro | Envelopamentos e revestimentos vinílicos</title>
+  <style>
+    :root{--ink:#050505;--panel:#151515;--cream:#f0f0f2;--muted:#a5a7ad;--gold:#f2b719;--silver:#c6c8cf;--line:rgba(255,255,255,.13);--max:1160px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ink);color:var(--cream);font:16px/1.65 "Segoe UI",Aptos,Inter,Arial,sans-serif;letter-spacing:.012em}body:before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;background:url("logo-revest-pro.png") center 46%/min(62vw,620px) auto no-repeat;opacity:.045}
+    a{color:inherit}.wrap{width:min(var(--max),calc(100% - 48px));margin:auto}.top{border-bottom:1px solid var(--line);background:#050505}
+    .nav{min-height:112px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:800;letter-spacing:.1em}.brand-logo{width:104px;height:104px;object-fit:contain;display:block;filter:drop-shadow(0 0 14px rgba(242,183,25,.2))}.brand-name{display:flex;flex-direction:column;gap:3px}.brand-name small{font-size:9px;line-height:1.2;letter-spacing:.12em;color:var(--silver);font-weight:600}
+    .nav-links{display:flex;align-items:center;gap:24px;color:#d3d4d8;font-size:13px}.nav-links a{text-decoration:none}.nav-links a:hover{color:var(--gold)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 20px;background:var(--gold);color:#14120c;border:1px solid var(--gold);font-weight:750;text-decoration:none;border-radius:3px;transition:.2s}.btn:hover{background:#ffd24f;transform:translateY(-1px)}.btn.outline{background:transparent;color:var(--cream);border-color:rgba(244,240,232,.38)}.btn.outline:hover{border-color:var(--gold);color:var(--gold)}
+    .hero{position:relative;overflow:hidden;padding:82px 0 78px;background:radial-gradient(ellipse at 75% 43%,rgba(242,183,25,.14),transparent 40%),linear-gradient(110deg,#080808,#131313 65%,#050505)}
+    .hero-grid{display:grid;grid-template-columns:1.04fr .96fr;align-items:center;gap:48px}.eyebrow{color:var(--gold);font-size:11px;font-weight:750;letter-spacing:.18em;text-transform:uppercase}
+    h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(44px,6vw,76px);font-weight:700;line-height:1.02;letter-spacing:-.035em;margin:17px 0 22px;max-width:660px}h1 em{font-style:normal;color:var(--gold)}.lead{color:#c1c2c6;font-size:18px;max-width:540px;margin:0 0 28px}.actions{display:flex;flex-wrap:wrap;gap:12px}.micro{color:#a2a3a7;font-size:13px;margin-top:18px}
+    .hero-photo{position:relative;height:410px;border:1px solid rgba(242,183,25,.4);overflow:hidden;background:#171717;box-shadow:0 22px 60px #0009}.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center 52%;display:block}.hero-photo:after{content:"";position:absolute;inset:45% 0 0;background:linear-gradient(transparent,rgba(0,0,0,.7))}.hero-caption{position:absolute;z-index:1;left:18px;bottom:16px;color:#f2f0e9;font-size:11px;letter-spacing:.04em}
+    .section{padding:82px 0}.section-head{max-width:700px;margin-bottom:34px}.section h2{font-family:Georgia,"Times New Roman",serif;font-size:clamp(32px,4vw,49px);font-weight:700;line-height:1.1;letter-spacing:-.025em;margin:12px 0}.section-intro{color:var(--muted);margin:0}
+    .inspiration{background:#0c0c0c;border-block:1px solid var(--line)}.photo-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.video-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.video-card{margin:0;background:#151515;border:1px solid var(--line);overflow:hidden}.video-card video{width:100%;aspect-ratio:9/16;max-height:510px;object-fit:cover;background:#080808;display:block}.video-card figcaption{padding:14px 16px}.video-card strong{display:block;font:700 18px Georgia,"Times New Roman",serif}.video-card span{display:block;color:var(--muted);font-size:12px;margin-top:5px}.photo-card{margin:0;background:#151515;border:1px solid var(--line);overflow:hidden}.photo-card img{width:100%;height:224px;display:block;object-fit:cover;object-position:center}.photo-card figcaption{padding:14px 15px 16px}.photo-card strong{display:block;font-size:14px}.photo-card span{display:block;color:var(--muted);font-size:10px;margin-top:5px}
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.service-card{background:var(--panel);border:1px solid var(--line);padding:24px;min-height:200px}.service-card .num{color:var(--gold);font:12px ui-monospace,monospace;letter-spacing:.1em}.service-card h3{font-family:Georgia,"Times New Roman",serif;font-size:21px;margin:25px 0 8px}.service-card p{color:var(--muted);font-size:14px;margin:0}
+    .catalog-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.catalog-card{background:var(--panel);border:1px solid var(--line);overflow:hidden;display:flex;flex-direction:column}.catalog-cover{height:208px;background:#080808;display:grid;place-items:center;padding:12px}.catalog-cover img{width:100%;height:100%;object-fit:contain}.catalog-info{padding:17px;display:flex;flex:1;flex-direction:column}.catalog-info .eyebrow{font-size:9px}.catalog-info h3{font-family:Georgia,"Times New Roman",serif;font-size:18px;line-height:1.25;margin:8px 0}.catalog-info p{font-size:12px;color:var(--muted);margin:0 0 16px}.catalog-info .btn{margin-top:auto;padding:11px 12px;font-size:12px}.catalog-note{border-left:2px solid var(--gold);padding:12px 15px;color:var(--muted);font-size:13px;margin-top:18px;background:rgba(255,255,255,.035)}
+    .band{background:#e6e6e9;color:#171717;padding:62px 0}.band-grid{display:flex;align-items:center;justify-content:space-between;gap:30px}.band h2{font-size:clamp(27px,4vw,42px);line-height:1.12;max-width:690px;margin:10px 0}.band p{color:#515258;margin:0}.band .eyebrow{color:#9a7100}.band .btn{background:#141414;color:#f4f0e8;border-color:#141414;white-space:nowrap}.band .btn:hover{background:#353535}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:35px}.step{border-top:1px solid var(--line);padding-top:19px}.step b{color:var(--gold);font-size:12px;letter-spacing:.1em}.step h3{margin:10px 0 6px}.step p{color:var(--muted);font-size:14px;margin:0}
+    .area{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:30px 0}.area-inner{display:flex;gap:24px;align-items:center;justify-content:space-between}.area strong{font-size:18px}.area span{color:var(--muted);text-align:right}
+    footer{padding:25px 0;color:#999ba1;font-size:12px}.foot{display:flex;justify-content:space-between;gap:20px;align-items:center}.foot .brand-logo{width:82px;height:82px}.foot .brand-name small{font-size:7px}
+    .float{position:fixed;z-index:10;right:20px;bottom:20px;padding:13px 17px;background:#25d366;color:#082a13;border-radius:999px;text-decoration:none;font-weight:800;box-shadow:0 8px 26px #0007}
+    @media(max-width:900px){.nav-links{gap:14px}.hero-grid{gap:28px}.photo-grid,.catalog-grid{grid-template-columns:repeat(2,1fr)}.video-grid{grid-template-columns:repeat(3,1fr)}.photo-card img{height:250px}}
+    @media(max-width:720px){.nav-links{display:none}.hero{padding:60px 0}.hero-grid{grid-template-columns:1fr;gap:25px}.hero-photo{height:330px}.services{grid-template-columns:repeat(2,1fr)}.band-grid{align-items:flex-start;flex-direction:column}.steps{gap:17px}}
+    @media(max-width:540px){.wrap{width:min(100% - 32px,var(--max))}.nav{min-height:88px}.nav>.btn{padding:11px 13px;font-size:12px}.brand{font-size:12px;gap:8px}.brand-logo{width:76px;height:76px}.brand-name small{font-size:7px}.hero{padding:48px 0}.lead{font-size:16px}.hero-photo{height:260px}.section{padding:62px 0}.services,.steps{grid-template-columns:1fr}.photo-grid,.catalog-grid{grid-template-columns:1fr 1fr;gap:10px}.video-grid{grid-template-columns:1fr}.photo-card img{height:158px}.photo-card figcaption{padding:11px}.photo-card strong{font-size:12px}.photo-card span{font-size:9px}.catalog-cover{height:145px;padding:7px}.catalog-info{padding:12px}.catalog-info h3{font-size:13px}.catalog-info p{font-size:11px}.catalog-info .btn{padding:10px 7px;font-size:10px}.service-card{min-height:170px}.service-card h3{margin-top:18px}.area-inner,.foot{align-items:flex-start;flex-direction:column}.area span{text-align:left}.float{right:12px;bottom:12px}.band{padding:50px 0}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+    header,main,footer,.float{position:relative;z-index:1}
+  </style>
+</head>
+<body>
+  <header class="top"><div class="wrap nav">
+    <a class="brand" href="#" aria-label="Revest Pro, início"><img class="brand-logo" src="logo-revest-pro.png" alt=""><span class="brand-name">REVEST PRO<small>ENVELOPAMENTOS & REVESTIMENTOS VINÍLICOS</small></span></a>
+    <nav class="nav-links" aria-label="Navegação principal"><a href="#servicos">Serviços</a><a href="#inspiracao">Inspirações</a><a href="#videos">Vídeos</a><a href="#catalogos">Catálogos</a><a href="#regiao">Atendimento</a></nav>
+    <a class="btn" data-whatsapp href="#" target="_blank" rel="noopener">Pedir orçamento <span aria-hidden="true">↗</span></a>
+  </div></header>
+  <main>
+    <section class="hero"><div class="wrap hero-grid">
+      <div><div class="eyebrow">Acabamento que muda o ambiente</div>
+        <h1>Renove superfícies.<br><em>Transforme espaços.</em></h1>
+        <p class="lead">Envelopamento e revestimentos decorativos para dar uma nova leitura a móveis, paredes e veículos.</p>
+        <div class="actions"><a class="btn" data-whatsapp href="#" target="_blank" rel="noopener">Solicitar orçamento pelo WhatsApp <span aria-hidden="true">↗</span></a><a class="btn outline" href="#catalogos">Ver catálogos</a></div>
+        <p class="micro">Salvador, Lauro de Freitas e outras cidades da Bahia.</p>
+      </div>
+      <div class="hero-photo"><img src="alltak-cozinha-madeira.jpg" alt="Cozinha com armários em padrão amadeirado, imagem demonstrativa do catálogo Alltak Decor"><span class="hero-caption">Referência ilustrativa · Alltak Decor 2026</span></div>
+    </div></section>
+
+    <section class="section inspiration" id="inspiracao"><div class="wrap">
+      <div class="section-head"><div class="eyebrow">Ideias de aplicação</div><h2>Veja o efeito dos revestimentos no ambiente.</h2><p class="section-intro">Imagens demonstrativas extraídas dos catálogos dos fabricantes. São referências de produto, não fotos de serviços feitos pela Revest Pro.</p></div>
+      <div class="photo-grid">
+        <figure class="photo-card"><img src="alltak-madeira-teto.jpg" alt="Varanda com teto e mesa em acabamento amadeirado" loading="lazy"><figcaption><strong>Madeira em destaque</strong><span>Referência ilustrativa · Alltak Decor 2026</span></figcaption></figure>
+        <figure class="photo-card"><img src="etherna-parede-linho.jpg" alt="Sala clara com parede de textura tipo linho" loading="lazy"><figcaption><strong>Textura tipo linho</strong><span>Referência ilustrativa · Etherna Decor 2026</span></figcaption></figure>
+        <figure class="photo-card"><img src="texturas-ripado.jpg" alt="Painel ripado decorativo aplicado em sala" loading="lazy"><figcaption><strong>Painel ripado</strong><span>Referência ilustrativa · Texturas Decor Imprimax 2026</span></figcaption></figure>
+        <figure class="photo-card"><img src="decormax-freijo.jpg" alt="Padrão amadeirado Freijó demonstrado em ambiente decorado" loading="lazy"><figcaption><strong>Padrão amadeirado Freijó</strong><span>Referência ilustrativa · Decormax TX Imprimax 2026</span></figcaption></figure>
+        <figure class="photo-card"><img src="alltak-cozinha-bancada-pedra.jpg" alt="Cozinha com superfícies claras de efeito pedra e mobiliário amadeirado" loading="lazy"><figcaption><strong>Efeito pedra na cozinha</strong><span>Referência ilustrativa · Alltak Decor 2026</span></figcaption></figure>
+        <figure class="photo-card"><img src="alltak-pedra-neutra.jpg" alt="Ambiente com piso claro em tom mineral e móveis amadeirados" loading="lazy"><figcaption><strong>Tons minerais e pedra clara</strong><span>Referência ilustrativa · Alltak Decor 2026</span></figcaption></figure>
+      </div>
+    </div></section>
+
+    <section class="section" id="videos"><div class="wrap">
+      <div class="section-head"><div class="eyebrow">Revest Pro em movimento</div><h2>Veja mais de perto.</h2><p class="section-intro">Vídeos para conhecer melhor os acabamentos e as possibilidades de transformação.</p></div>
+      <div class="video-grid">
+        <figure class="video-card"><video controls playsinline preload="metadata"><source src="revest-pro-video-01.mp4" type="video/mp4">Seu navegador não reproduz este vídeo.</video><figcaption><strong>Vídeo 01</strong><span>Detalhes em vídeo · Revest Pro</span></figcaption></figure>
+        <figure class="video-card"><video controls playsinline preload="metadata"><source src="revest-pro-video-02.mp4" type="video/mp4">Seu navegador não reproduz este vídeo.</video><figcaption><strong>Vídeo 02</strong><span>Detalhes em vídeo · Revest Pro</span></figcaption></figure>
+        <figure class="video-card"><video controls playsinline preload="metadata"><source src="revest-pro-video-03.mp4" type="video/mp4">Seu navegador não reproduz este vídeo.</video><figcaption><strong>Vídeo 03</strong><span>Detalhes em vídeo · Revest Pro</span></figcaption></figure>
+      </div>
+    </div></section>
+
+    <section class="section" id="servicos"><div class="wrap">
+      <div class="section-head"><div class="eyebrow">O que fazemos</div><h2>Uma nova superfície. Um novo espaço.</h2><p class="section-intro">Conte o que você quer transformar e peça uma avaliação pelo WhatsApp.</p></div>
+      <div class="services">
+        <article class="service-card"><span class="num">01 / CASA</span><h3>Envelopamento de móveis</h3><p>Renove portas, armários, bancadas e outras superfícies com acabamento adesivo.</p></article>
+        <article class="service-card"><span class="num">02 / DECORAÇÃO</span><h3>Adesivo decorativo</h3><p>Traga cor, textura e personalidade para o ambiente.</p></article>
+        <article class="service-card"><span class="num">03 / PAREDES</span><h3>Papel de parede</h3><p>Novos padrões e atmosferas para sua casa ou espaço comercial.</p></article>
+        
+        <article class="service-card"><span class="num">05 / PROJETOS</span><h3>Revestimento decorativo</h3><p>Converse sobre medidas, superfície e resultado desejado para seu projeto.</p></article>
+        <article class="service-card"><span class="num">06 / SOB MEDIDA</span><h3>Orçamento personalizado</h3><p>Envie fotos e detalhes pelo WhatsApp para iniciar sua cotação.</p></article>
+      </div>
+    </div></section>
+
+    <section class="section" id="catalogos"><div class="wrap">
+      <div class="section-head"><div class="eyebrow">Materiais e acabamentos</div><h2>Consulte os catálogos completos.</h2><p class="section-intro">Escolha um catálogo para ver padrões, texturas e referências de aplicação. Peça ajuda para encontrar uma opção para seu projeto.</p></div>
+      <div class="catalog-grid">
+        <article class="catalog-card"><div class="catalog-cover"><img src="capa-alltak.jpg" alt="Capa do catálogo Alltak Decor 2026" loading="lazy"></div><div class="catalog-info"><div class="eyebrow">Revestimento vinílico adesivo</div><h3>Alltak Decor 2026</h3><p>98 páginas · padrões, cores e aplicações.</p><a class="btn" href="https://github.com/erikcore25-debug/RevestPro/releases/download/catalogos-2026/ALLTAK-DECOR-2026.pdf" target="_blank" rel="noopener">Abrir catálogo PDF ↗</a></div></article>
+        <article class="catalog-card"><div class="catalog-cover"><img src="capa-etherna.jpg" alt="Capa do catálogo Etherna Decor 2026" loading="lazy"></div><div class="catalog-info"><div class="eyebrow">Adesivos decorativos</div><h3>Etherna Decor 2026</h3><p>148 páginas · acabamentos e inspirações.</p><a class="btn" href="https://github.com/erikcore25-debug/RevestPro/releases/download/catalogos-2026/ETHERNA-DECOR-2026.pdf" target="_blank" rel="noopener">Abrir catálogo PDF ↗</a></div></article>
+        <article class="catalog-card"><div class="catalog-cover"><img src="capa-texturas-imprimax.jpg" alt="Capa do catálogo Texturas Decor Imprimax 2026" loading="lazy"></div><div class="catalog-info"><div class="eyebrow">Texturas e padrões</div><h3>Texturas Decor Imprimax 2026</h3><p>87 páginas · opções para paredes e móveis.</p><a class="btn" href="https://github.com/erikcore25-debug/RevestPro/releases/download/catalogos-2026/TEXTURAS-DECOR-IMPRIMAX-2026.pdf" target="_blank" rel="noopener">Abrir catálogo PDF ↗</a></div></article>
+        <article class="catalog-card"><div class="catalog-cover"><img src="capa-decormax-tx.jpg" alt="Capa do catálogo Decormax TX Imprimax 2026" loading="lazy"></div><div class="catalog-info"><div class="eyebrow">Revestimento adesivo</div><h3>Decormax TX Imprimax 2026</h3><p>49 páginas · padrões e sugestões de uso.</p><a class="btn" href="https://github.com/erikcore25-debug/RevestPro/releases/download/catalogos-2026/DECORMAX-TX-IMPRIMAX-2026.pdf" target="_blank" rel="noopener">Abrir catálogo PDF ↗</a></div></article>
+      </div>
+      <p class="catalog-note">Cores podem variar conforme a tela. Consulte o catálogo e, quando possível, veja uma amostra física.</p>
+    </div></section>
+
+    <section class="band"><div class="wrap band-grid"><div><div class="eyebrow">Seu projeto começa com uma conversa</div><h2>Envie uma foto e conte o que quer renovar.</h2><p>Receba orientações para o próximo passo e solicite seu orçamento.</p></div><a class="btn" data-whatsapp href="#" target="_blank" rel="noopener">Chamar a Revest Pro <span aria-hidden="true">↗</span></a></div></section>
+
+    <section class="section" id="processo"><div class="wrap">
+      <div class="section-head"><div class="eyebrow">Simples assim</div><h2>Do primeiro contato ao novo visual.</h2></div>
+      <div class="steps"><article class="step"><b>PASSO 01</b><h3>Conte sua ideia</h3><p>Fale sobre o ambiente, móvel ou parede que deseja transformar.</p></article><article class="step"><b>PASSO 02</b><h3>Envie referências</h3><p>Compartilhe fotos, medidas aproximadas e inspirações pelo WhatsApp.</p></article><article class="step"><b>PASSO 03</b><h3>Receba seu orçamento</h3><p>A equipe conversa com você sobre o projeto e os próximos passos.</p></article></div>
+    </div></section>
+
+    <section class="area" id="regiao"><div class="wrap area-inner"><strong>Atendimento na Bahia</strong><span>Salvador · Lauro de Freitas · Consulte outras cidades</span></div></section>
+  </main>
+  <footer><div class="wrap foot"><a class="brand" href="#"><img class="brand-logo" src="logo-revest-pro.png" alt=""><span class="brand-name">REVEST PRO<small>ENVELOPAMENTOS & REVESTIMENTOS VINÍLICOS</small></span></a><span>Transformando superfícies com cuidado e estilo.</span><span>© <span id="year"></span> Revest Pro</span></div></footer>
+  <a class="float" data-whatsapp href="#" target="_blank" rel="noopener" aria-label="Pedir orçamento para a Revest Pro pelo WhatsApp">WhatsApp ↗</a>
+  <script>
+    // Confirme o código do país e o DDD antes de publicar. Número informado: 12982480481.
+    const whatsappNumber = "5512982480481";
+    const message = encodeURIComponent("Olá! Encontrei a Revest Pro pela landing page e gostaria de solicitar um orçamento.");
+    document.querySelectorAll("[data-whatsapp]").forEach(link => link.href = "https://wa.me/" + whatsappNumber + "?text=" + message);
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
